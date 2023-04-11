@@ -4,18 +4,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Challenge #2</title>
 	<style>
 		/* Your styles here! */
 		.main {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			grid-gap: 2px; 
+			grid-gap: 1.85rem; 
 		}
 
 		.image {
-			width: 235px;
-			height: 235px;
+			width: 190px;
+			height: 190px;
+		}
+
+		.features-list {
+			display: flex;
+			justify-content: flex-end;
 		}
 
 		article {
@@ -31,17 +36,22 @@
 		@media only screen and (max-width: 500px) {
 			.main {
 				display: grid;
+				grid-template-columns: 1fr;
+				grid-gap: 2em;
 			}
 
 			article {
 				flex-direction: column;
+				max-width: 285px;
 			}
 
 			.image {
 				object-fit: cover;
+				width: 385px;
+				height: 385px;
 			}
 		}
-		
+
 	</style>
 </head>
 <body>
