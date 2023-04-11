@@ -7,6 +7,40 @@
 	<title>Document</title>
 	<style>
 		/* Your styles here! */
+		.main {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 2px; 
+		}
+
+		.image {
+			width: 235px;
+			height: 235px;
+		}
+
+		article {
+			display:flex;
+			justify-content: center;
+			background-color: aqua;
+			max-width: 485px;
+			column-gap: 18px;
+			padding: 1rem;
+		}
+
+		/* Mobile */
+		@media only screen and (max-width: 500px) {
+			.main {
+				display: grid;
+			}
+
+			article {
+				flex-direction: column;
+			}
+
+			.image {
+				object-fit: cover;
+			}
+		}
 		
 	</style>
 </head>
